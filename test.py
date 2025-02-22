@@ -1,7 +1,4 @@
-print("hello word")
+def revers_word(sentence):
+    words = " ".split(sentence)
 
-x = 5
-y = 3
-result = x + y
-
-print(result)
+    
