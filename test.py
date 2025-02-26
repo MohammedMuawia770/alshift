@@ -1,14 +1,15 @@
-number_list = [10,20,30,40,500,60,70,80,90,10]
+number_list = [10,2,30,40,-1,670,670,80,90,10]
 
-def larger(number):
-    max = number[0]
-    
-    for i in number:
-        if i > max:
-            max = i
+def largest_number(numbers):
+    x = numbers[0]
+   
+    for i in numbers:
+        if x > i:
+            x = i
+        
 
-    return max
+    return x
+        
 
-
-print(larger(number_list))
-
+result = largest_number(number_list)
+print(result)
