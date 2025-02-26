@@ -1,15 +1,15 @@
-number_list = [10,2,30,40,-1,670,670,80,90,10]
+number_list = ['aba', 'xyz', 'aba', '1221']
 
-def largest_number(numbers):
-    x = numbers[0]
-   
-    for i in numbers:
-        if x > i:
-            x = i
+def count_string(list):
+    count = 0
+    for word in list:
+        if len(word) > 1 and word[0] == word[-1]:
+
+            count+=1
+
+    return count
+
         
 
-    return x
-        
-
-result = largest_number(number_list)
+result = count_string(number_list)
 print(result)
